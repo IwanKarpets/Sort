@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            background: gray;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+
+        }
+        label{
+            margin-right: 10px;
+        }
+        select{
+            border-radius: 5px;
+            margin-right: 25px;
+            
+        }
+        
+        .sort{
+            padding: 0 60px 0 60px;
+            border-radius: 5px;
+        }
+        .card-wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            flex-wrap: wrap;
+            
+            
+        }
+
+        .card{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            padding: 50px 50px 50px 50px;
+            border-radius: 5px;
+            background: limegreen;
+            margin-bottom: 10px;
+            
+        }
+        .card-title{
+            margin-bottom: 10px;
+
+        }
+        .card-goods{
+            margin-bottom: 10px;
+        }
+        .card-price{
+            margin-bottom: 10px;
+        }
+
+
+
+
+        
+
+
+
+
+    </style>
+
+
+    
+</head>
+<body>
+   <div class="container">
+       <div class="title">
+           <h1>Poduct Lists</h1>
+       </div>
+       <form>
+           <p>
+            <label for="">Type of sort:</label>
+           </p>
+        <p><select>
+         <option disabled>Выберите категорию</option>
+         <option value="id">Id</option>
+         <option value="price">Price</option>
+        </select></p>
+        <p><button class="sort">Sort</button></p>
+       </form>
+       <div class="card-wrapper">
+           <!-- <div class="card">
+               <div class="card-id">#1</div>
+                <div class="card-name">Apple</div>
+                <div class="card-price">$ 1.02</div>
+           </div> -->
+       </div>
+   </div>
+   
+   
+
+
+   <script src="script.js"></script>
+</body>
+</html>
